@@ -1,0 +1,37 @@
+        body {
+            background-color: #ffe066;
+        }
+        .home-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fffbe6 0%, #ffe066 100%);
+        }
+        .home-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #b8860b;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 8px #fff9c4;
+        }
+        .home-desc {
+            font-size: 1.5rem;
+            color: #7c6f00;
+            margin-bottom: 2rem;
+        }
+        .home-btn {
+            font-size: 1.2rem;
+            padding: 0.75rem 2rem;
+            background: #ffd60a;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #fffde7;
+            transition: all 0.2s;
+        }
+        .home-btn:hover {
+            background: #ffe066;
+            color: #b8860b;
+        }

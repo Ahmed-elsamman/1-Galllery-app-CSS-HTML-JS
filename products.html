@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="Container ">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logo " href="index.html"><img src="./images/logo-dev2.jpg" alt="logo" class="w-100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div id="add-prod-form"
+            class="d-none  my-5 w-50 m-auto bg-warning rounded-4 p-5 position-absolute top-50 start-50 translate-middle z-3 position-relative">
+            <i class="fa-solid fa-circle-xmark position-absolute fa-2x top-0 end-0 m-3" id="close-from-icon"></i>
+            <h2 class="text-center "> Add New Product </h2>
+            <form class="w-75 m-auto  p-3">
+                <label class="ms-4 p-2" for="pname">product name </label>
+                <input id="pname" type="text" class="form-control w-75 m-auto mt-2 my-2 ">
+
+                <label class="ms-4 p-2" for="pdescription">product description </label>
+                <input id="pdescription" type="text" class="form-control w-75 m-auto mt-2 my-2">
+
+                <label class="ms-4 p-2" for="pprice">product price </label>
+                <input id="pprice" type="text" class="form-control w-75 m-auto mt-2 my-2">
+
+                <label class="ms-4 p-2" for="pimage" class="p-2"> product image </label>
+                <input type="file" id="pimage" accept="image/*" multiple>
+
+            </form>
+            <button type="submit" id="submit-btn" class="btn btn-outline-primary d-block p-3 my-2 w-50 m-auto"
+                onclick="addProduct()"> Add </button>
+
+
+        </div>
+
+
+
+        <!--  section from dispaly Products  -->
+        <section class="prodcutsGallery px-3 m-auto overflow-hidden ">
+
+            <h2 class=" p-3 my-3 text-center fa-bounce">  Gallery Of Products</h2>
+            <div class="actions  w-75 m-auto d-flex justify-content-around align-items-center bg-dark text-white p-3 rounded-4 mb-3">
+
+                <button class="btn w-25 btn-success mb-3" id="addProductBtn">Add new Product</button>
+                <button class="btn w-25 btn-danger mb-3" onclick="deleteAllProducts()">Delete All Products</button>
+            </div>
+            <div class="d-flex flex-wrap justify-content-evenly  productList">
+
+                <!-- Products will be displayed here -->
+
+        </section>
+
+        <section class=" ">
+            <div class="slider-of-products d-none bg-warning p-4 rounded-4">
+
+                
+                <i id="close-icon" class="fa-solid fa-square-xmark fa-3x position-absolute top-0 end-0 m-3 fa-fade"></i>
+                <i id="arrow-left-icon" class="fa-regular fa-circle-left fa-3x position-absolute top-50 start-0 m-3"></i>
+                <i id="arrow-right-icon" class="fa-regular fa-circle-right fa-3x position-absolute top-50 end-0 m-3"></i>
+            </div>
+
+        </section>
+
+    </section> <!--  /Container -->
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/products.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/about.css"> 
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <section class="container ">
+       
+
+
+
+        <div id="add-prod-form"
+            class="d-none  my-5 w-50 m-auto bg-warning rounded-4 p-5 position-absolute top-50 start-50 translate-middle z-3 position-relative">
+            <i class="fa-solid fa-circle-xmark position-absolute fa-2x top-0 end-0 m-3" id="close-from-icon"></i>
+            <h2 class="text-center "> Add New Photo in Gallery Compmany </h2>
+            <form class="w-75 m-auto  p-3">
+                <label class="ms-4 p-2" for="pname">photo name </label>
+                <input id="pname" type="text" class="form-control w-75 m-auto mt-2 my-2 ">
+
+                <label class="ms-4 p-2" for="pdescription">photo description </label>
+                <input id="pdescription" type="text" class="form-control w-75 m-auto mt-2 my-2">
+
+                <label class="ms-4 p-2" for="pprice">photo price </label>
+                <input id="pprice" type="text" class="form-control w-75 m-auto mt-2 my-2">
+
+                <label class="ms-4 p-2" for="pimage" class="p-2"> image </label>
+                <input type="file" id="pimage" accept="image/*" multiple>
+
+            </form>
+            <button type="submit" id="submit-btn" class="btn btn-outline-primary d-block p-3 my-2 w-50 m-auto"
+                onclick="addProduct()"> Add photo</button>
+
+
+        </div>
+
+    <div class="text-center m-auto bg-secondary p-3 rounded-4 my-5 p-4 overflow-hidden">
+                <h2 class=" p-3 my-3 text-center fa-bounce text-warning"> let's go know more about our company </h2>
+                <p class="text-center text-white">this is a company that specializes in providing high-quality products to our customers. We are committed to excellence and customer satisfaction, ensuring that every product we offer meets the highest standards of quality and performance. Our team works tirelessly to innovate and improve our offerings, making sure that we stay ahead in the market and continue to meet the evolving needs of our clients. Whether you are looking for cutting-edge technology or reliable everyday items, we have something for everyone. Thank you for choosing us as your trusted partner in quality products.
+                </p>
+            </div>
+
+        <!--  section from dispaly Products  -->
+        <section class="prodcutsGallery px-3 m-auto overflow-hidden ">
+
+
+
+       
+        
+                 <div
+                class="actions  w-75 m-auto d-flex justify-content-around align-items-center bg-dark text-white p-3 rounded-4 mb-3">
+
+                <button class="btn w-25 btn-success mb-3" id="addProductBtn">Add photo in our company</button>
+                <button class="btn w-25 btn-danger mb-3" onclick="deleteAllProducts()">Delete All photos</button>
+            </div>
+            <div class=" productList  my-5 position-relative">
+
+                <!-- Products will be displayed here -->
+
+        </section>
+
+        <section class="slider-section">
+            <div class="slider-of-products d-none bg-warning p-4 rounded-4 ">
+
+
+                <i id="close-icon" class="fa-solid fa-square-xmark fa-3x position-absolute top-0 end-0 m-3 fa-fade"></i>
+                <i id="arrow-left-icon"
+                    class="fa-regular fa-circle-left fa-3x position-absolute top-50 start-0 m-3"></i>
+                <i id="arrow-right-icon"
+                    class="fa-regular fa-circle-right fa-3x position-absolute top-50 end-0 m-3"></i>
+            </div>
+
+        </section>
+
+    </section> <!--  /Container -->
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/about.js"></script>
+
+</body>
+
+</html>
